@@ -184,5 +184,8 @@ app.post('/seguir', async (req, res) => {
 
 
 //INICIAR SERVIDOR app.listen(3000) basicamente dice "escuchá peticiones del puerto 3000"
-app.listen(3000, '0.0.0.0'); // o usá tu IP local
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Servidor funcionando en Render");
+});
+
 
