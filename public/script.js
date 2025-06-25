@@ -1,4 +1,4 @@
-const api = "http://localhost:3000";
+const api = "https://redsocial-x0po.onrender.com";
 let usuarioActual = null;
 let mapaUsuarios = {}; // para mapear id -> nombre
 
